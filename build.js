@@ -24,6 +24,8 @@ var logger = function() {
 };
 
 Metalsmith(__dirname)
+    .source('./src/')
+    .destination('./build/')
     .use(markdown())
     .use(templates('handlebars'))
     .use(logger())
@@ -33,5 +35,6 @@ Metalsmith(__dirname)
         if (err) throw err;
         
         console.log('No error?');
-        console.log('Files: ' + JSON.stringify(files));
+        //console.log('Files: ' + JSON.stringify(files));
+        console.log('Files:', Object.keys(files));
     });
