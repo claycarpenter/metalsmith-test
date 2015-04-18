@@ -4,7 +4,7 @@ var Metalsmith = require('metalsmith'),
 
 Metalsmith(__dirname)
     .source('./src/')
-    .destination('./build/')
+    .destination('./output/')
     .use(markdown())
     .use(templates('handlebars'))
     .build(function(err, files) {
