@@ -12,7 +12,6 @@ Metalsmith(__dirname)
         
         if (err) throw err;
         
-        console.log('No error?');
-        //console.log('Files: ' + JSON.stringify(files));
-        console.log('Files:', Object.keys(files));
+        console.log('Build successful.');
+        console.log('Output files:', Object.keys(files));
     });
