@@ -1,7 +1,7 @@
 ---
 title: Git Clone Command for GitHub Repos
 date: 2012-08-20
-template: post.html
+template: templates/snippet.jade
 ---
 
 To clone a git repo from GitHub:
