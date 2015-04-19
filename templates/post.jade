@@ -1,7 +1,6 @@
-html
-    include templates/head.jade
+extends templates/base.jade
+
+block content
+    h1= data.title
     
-    body
-        h1= data.title
-        p.
-            Lorem ipsum all that jazz.
+    div!= data.contents
