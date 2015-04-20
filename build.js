@@ -1,6 +1,6 @@
 var Metalsmith = require('metalsmith'),
     markdown = require('metalsmith-markdown'),
-    jadeTemplater = require('./jade-templater.js');
+    jadeTemplater = require('metalsmith-jade-templater');
 
 Metalsmith(__dirname)
     .source('./src/')
